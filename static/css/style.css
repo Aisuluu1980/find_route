@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #93d6dc;
+    color: #222222;
+    margin-top: 60px;
+}
+
+h1{
+	font-weight: bolder;
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.my_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text_des{
+    margin: 50px;
+    font-size: large;
+    /*align-items: center;*/
+    font-weight: bolder;
+    /*text-decoration-color: darkblue;*/
+    text-decoration-style: dotted;
+    text-align: justify;
+
+}
+
+.btn_sub{
+  display: flex;
+  justify-content: center;
+}

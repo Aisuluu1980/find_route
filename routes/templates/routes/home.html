@@ -26,7 +26,6 @@
                     <tr>
                       <th scope="col">#</th>
                       <th scope="col">Список поездов по этому маршруту</th>
-
                     </tr>
                   </thead>
                   <tbody>
@@ -35,21 +34,27 @@
                       <th scope="row">{{ forloop.counter }}</th>
                       <td>Поезд {{ train.name }} из г.  {{ train.from_city.name }}
                           в г.{{ train.to_city.name }} </td>
-
                     </tr>
-
                   {% endfor %}
                   </tbody>
                 </table>
                     <button type="submit" class="btn btn-success">Сохранить</button>
                 </form>
         <br><br>
-
             {% endfor %}
         {% endif %}
     </div>
+
 </div>
 {% url 'find_routes' as action%}
 {% include 'form.html' with button='Найти' action=action%}
+<div class="col-md-8 mx-auto text_des">
+       <p>Это сайт по поиску маршрутов, удовлетворяющих требованиям клиентов.
+            Зарегистрированные пользователи имеют возможность добавлять, редактировать и удалять поезда, города, создавать новые маршруты.
+            Незарегистрированные пользователи имеют только возможность просмотра списков городов, поездов и маршрутов.
+            Маршруты можно найти по времени в пути, через транзитные города.
+            В создании этого пробного сайта я использовала Python3 и Django 3.1.13
+       </p>
+</div>
 
 {% endblock %}
